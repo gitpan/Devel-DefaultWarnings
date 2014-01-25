@@ -8,15 +8,16 @@ SYNOPSIS
       }
       {
         use warnings;
-        my $def = warnings_default(); #false;
+        BEGIN { my $def = warnings_default(); } #false;
       }
       {
         no warnings;
-        my $def = warnings_default(); #false;
+        BEGIN { my $def = warnings_default(); } #false;
       }
 
 DESCRIPTION
-    Check if lexical warnings have been changed from the default.
+    Check if lexical warnings have been changed from the default. Checks the
+    current compiling context.
 
 FUNCTIONS
     warnings_default

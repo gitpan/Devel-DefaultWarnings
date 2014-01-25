@@ -23,4 +23,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Devel-DefaultWarnings
   license: http://dev.perl.org/licenses/
   repository: git://github.com/haarg/Devel-DefaultWarnings
-version: 0.001000
+version: 0.001001
