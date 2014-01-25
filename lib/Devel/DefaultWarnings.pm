@@ -2,7 +2,7 @@ package Devel::DefaultWarnings;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 
 use base 'Exporter';
 our @EXPORT = qw(warnings_default);
@@ -45,7 +45,7 @@ Devel::DefaultWarnings - Detect if warnings have been left at defaults
 
   use Devel::DefaultWarnings;
   {
-    my $def = warnings_default(); #true;
+    BEGIN { my $def = warnings_default(); } #true;
   }
   {
     use warnings;
@@ -81,7 +81,7 @@ None yet.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2014 the strictures L</AUTHOR> and L</CONTRIBUTORS>
+Copyright (c) 2014 the Devel::DefaultWarnings L</AUTHOR> and L</CONTRIBUTORS>
 as listed above.
 
 =head1 LICENSE

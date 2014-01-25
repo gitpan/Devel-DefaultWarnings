@@ -3,7 +3,7 @@
    "author" : [
       "haarg - Graham Knop (cpan:HAARG) <haarg@haarg.org>"
    ],
-   "dynamic_config" : 1,
+   "dynamic_config" : 0,
    "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
@@ -56,5 +56,5 @@
       },
       "x_IRC" : "irc://irc.perl.org/#toolchain"
    },
-   "version" : "0.001001"
+   "version" : "0.001002"
 }

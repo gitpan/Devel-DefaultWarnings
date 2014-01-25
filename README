@@ -4,7 +4,7 @@ NAME
 SYNOPSIS
       use Devel::DefaultWarnings;
       {
-        my $def = warnings_default(); #true;
+        BEGIN { my $def = warnings_default(); } #true;
       }
       {
         use warnings;
@@ -31,8 +31,8 @@ CONTRIBUTORS
     None yet.
 
 COPYRIGHT
-    Copyright (c) 2014 the strictures "AUTHOR" and "CONTRIBUTORS" as listed
-    above.
+    Copyright (c) 2014 the Devel::DefaultWarnings "AUTHOR" and
+    "CONTRIBUTORS" as listed above.
 
 LICENSE
     This library is free software and may be distributed under the same
